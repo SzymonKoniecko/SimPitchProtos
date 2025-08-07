@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package logging;
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+
+service LogService {
+  rpc LogEntry (LogEntryRequest) returns (google.protobuf.Empty);
+}
+
+message LogEntryRequest {
+  string id = 1;
+  google.protobuf.Timestamp timestamp = 2;
+  string message = 3;
+  string level = 4;
+  string stack_trace = 5;
+  string source = 6;
+  string context = 7;
+}
+message Empty {
+}
