@@ -18,5 +18,3 @@ message LogEntryRequest {
   string source = 6;
   string context = 7;
 }
-message Empty {
-}
