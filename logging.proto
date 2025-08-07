@@ -1,9 +1,11 @@
 syntax = "proto3";
 
-package logging;
+package loggingProto;
 
 import "google/protobuf/empty.proto";
 import "google/protobuf/timestamp.proto";
+
+option csharp_namespace = "LoggingService.SimPitchProtos";
 
 service LogService {
   rpc LogEntry (LogEntryRequest) returns (google.protobuf.Empty);
