@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package SimPitchProtos.SportsDataService.Team;
+
+import "commonTypes.proto";
+
+option csharp_namespace = "SimPitchProtos.SportsDataService.Team";
+
+message TeamIdResponse {
+  string id = 1;
+}
+
+message TeamListResponse {
+  repeated TeamGrpc teams = 1;
+}

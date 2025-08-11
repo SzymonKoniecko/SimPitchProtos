@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+package SimPitchProtos.SportsDataService;
+
+option csharp_namespace = "SimPitchProtos.SportsDataService";
+
+// CountryDto
+message CountryGrpc {
+  string id = 1;
+  string name = 2;
+  string code = 3;
+  string created_at = 4;
+  string updated_at = 5;
+}
+
+// StadiumDto
+message StadiumGrpc {
+  string id = 1;
+  string name = 2;
+  int32 capacity = 3;
+  string created_at = 4;
+  string updated_at = 5;
+}
+
+// LeagueDto
+message LeagueGrpc {
+  string id = 1;
+  string name = 2;
+  string sport = 3;
+  string countryId = 4;
+  string created_at = 5;
+  string updated_at = 6;
+}
+// TeamDto
+message TeamGrpc {
+  string id = 1;
+  string name = 2;
+  CountryGrpc country = 3;
+  StadiumGrpc stadium = 4;
+  LeagueGrpc league = 5;
+  string logo_url = 6;
+  string short_name = 7;
+  string sport = 8;
+}

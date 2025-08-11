@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package SimPitchProtos.SportsDataService.Stadium;
+
+
+option csharp_namespace = "SimPitchProtos.SportsDataService.Stadium";
+
+message StadiumByIdRequest {
+  string id = 1;
+}
+message CreateStadiumRequest {
+  string name = 2;
+  int32 capacity = 3;
+}

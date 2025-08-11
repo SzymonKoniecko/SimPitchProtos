@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package SimPitchProtos.SportsDataService.Stadium;
+
+import "google/protobuf/empty.proto";
+import "Stadium/requests.proto";
+import "Stadium/responses.proto";
+import "commonTypes.proto";
+
+option csharp_namespace = "SimPitchProtos.SportsDataService.Stadium";
+
+service StadiumService {
+  rpc GetAllStadiums (google.protobuf.Empty) returns (StadiumListResponse);
+  rpc GetStadiumById (StadiumByIdRequest) returns (StadiumGrpc);
+  rpc CreateStadium (CreateStadiumRequest) returns (StadiumIdResponse);
+}
