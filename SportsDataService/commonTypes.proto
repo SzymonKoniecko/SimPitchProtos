@@ -59,4 +59,5 @@ message MatchRoundGrpc{
   int32 home_goals = 5;
   int32 away_goals = 6;
   bool is_draw = 7;
+  bool is_played = 8;
 }
