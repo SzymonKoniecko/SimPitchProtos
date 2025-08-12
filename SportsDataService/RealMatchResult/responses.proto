@@ -7,5 +7,5 @@ import "commonTypes.proto";
 option csharp_namespace = "SimPitchProtos.SportsDataService.RealMatchResult";
 
 message RealMatchResultsByRoundIdResponse {
-  repeated RealMatchResultGrpc real_match_result = 1;
+  repeated RealMatchResultGrpc real_match_results = 1;
 }
