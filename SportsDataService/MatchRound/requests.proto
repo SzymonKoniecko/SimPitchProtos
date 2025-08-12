@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package SimPitchProtos.SportsDataService.MatchRound;
+
+
+option csharp_namespace = "SimPitchProtos.SportsDataService.MatchRound";
+
+message MatchRoundsByRoundIdRequest {
+  string round_id = 1;
+}

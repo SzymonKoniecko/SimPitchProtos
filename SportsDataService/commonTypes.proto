@@ -50,8 +50,8 @@ message LeagueRoundGrpc{
   int32 round = 4;
   int32 max_round = 5;
 }
-// RealMatchResultDto
-message RealMatchResultGrpc{
+// MatchRoundDto
+message MatchRoundGrpc{
   string id = 1;
   string round_id = 2;
   string home_team_id = 3;
