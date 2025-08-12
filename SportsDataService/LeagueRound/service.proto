@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package SimPitchProtos.SportsDataService.LeagueRound;
+
+import "LeagueRound/requests.proto";
+import "LeagueRound/responses.proto";
+import "commonTypes.proto";
+
+option csharp_namespace = "SimPitchProtos.SportsDataService.LeagueRound";
+
+service LeagueRoundService {
+  rpc GetAllLeagueRoundsByParams (LeagueRoundsByParamsRequest) returns (LeagueRoundsByParamsResponse);
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package SimPitchProtos.SportsDataService.LeagueRound;
+
+import "commonTypes.proto";
+
+option csharp_namespace = "SimPitchProtos.SportsDataService.LeagueRound";
+
+message LeagueRoundsByParamsResponse {
+  repeated LeagueRoundGrpc league_rounds = 1;
+}

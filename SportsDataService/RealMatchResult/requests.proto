@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package SimPitchProtos.SportsDataService.RealMatchResult;
+
+
+option csharp_namespace = "SimPitchProtos.SportsDataService.RealMatchResult";
+
+message RealMatchResultsByParamsRequest {
+  string round_id = 1;
+}
