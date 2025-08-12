@@ -48,7 +48,6 @@ message LeagueRoundGrpc{
   string league_id = 2;
   string season_year = 3;
   int32 round = 4;
-  int32 max_round = 5;
 }
 // MatchRoundDto
 message MatchRoundGrpc{
