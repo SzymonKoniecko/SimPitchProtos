@@ -16,5 +16,4 @@ message CreateTeamRequest {
   string league_id = 4;
   string logo_url = 5;
   string short_name = 6;
-  string sport = 7;
 }
