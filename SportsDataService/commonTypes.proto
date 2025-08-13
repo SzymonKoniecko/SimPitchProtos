@@ -26,8 +26,8 @@ message StadiumGrpc {
 message LeagueGrpc {
   string id = 1;
   string name = 2;
-  string sport = 3;
-  string countryId = 4;
+  string countryId = 3;
+  int32 max_round = 4;
   string created_at = 5;
   string updated_at = 6;
 }
@@ -58,4 +58,19 @@ message MatchRoundGrpc{
   int32 away_goals = 6;
   bool is_draw = 7;
   bool is_played = 8;
+}
+// SeasonStatsDto
+message SeasonStatsGrpc{
+  string id = 1;
+  string team_id = 2;
+  string season_year = 3;
+  string league_id = 4;
+  int32 matches_played = 5;
+  int32 wins = 6;
+  int32 losses = 7;
+  int32 draws = 8;
+  int32 goals_for = 9;
+  int32 goals_against = 10;
+  string created_at = 11;
+  string updated_at = 12;
 }
