@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package SimPitchProtos.SportsDataService.SeasonStats;
+
+
+option csharp_namespace = "SimPitchProtos.SportsDataService.SeasonStats";
+
+message SeasonStatsByTeamIdRequest {
+  string team_id = 1;
+}

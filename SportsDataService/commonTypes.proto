@@ -71,6 +71,4 @@ message SeasonStatsGrpc{
   int32 draws = 8;
   int32 goals_for = 9;
   int32 goals_against = 10;
-  string created_at = 11;
-  string updated_at = 12;
 }
