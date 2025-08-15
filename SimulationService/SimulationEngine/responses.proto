@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package SimPitchProtos.SimulationService.SimulationEngine;
+
+import "commonTypes.proto";
+
+option csharp_namespace = "SimPitchProtos.SimulationService.SimulationEngine";
+
+message RunSimulationEngineResponse{
+  string simulation_id = 1;
+}

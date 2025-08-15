@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package SimPitchProtos.SimulationService.SimulationEngine;
+
+import "google/protobuf/empty.proto";
+import "SimulationEngine/requests.proto";
+import "SimulationEngine/responses.proto";
+import "commonTypes.proto";
+
+option csharp_namespace = "SimPitchProtos.SimulationService.SimulationEngine";
+
+service SimulationEngineService {
+  rpc RunSimulation (RunSimulationEngineRequest) returns (RunSimulationEngineResponse);
+}
