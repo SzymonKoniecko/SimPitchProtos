@@ -24,6 +24,7 @@ message LeagueGrpc {
   string name = 2;
   string countryId = 3;
   int32 max_round = 4;
+  float strength = 5;
 }
 // TeamDto
 message TeamGrpc {
