@@ -9,8 +9,6 @@ message CountryGrpc {
   string id = 1;
   string name = 2;
   string code = 3;
-  string created_at = 4;
-  string updated_at = 5;
 }
 
 // StadiumDto
@@ -18,8 +16,6 @@ message StadiumGrpc {
   string id = 1;
   string name = 2;
   int32 capacity = 3;
-  string created_at = 4;
-  string updated_at = 5;
 }
 
 // LeagueDto
@@ -28,8 +24,6 @@ message LeagueGrpc {
   string name = 2;
   string countryId = 3;
   int32 max_round = 4;
-  string created_at = 5;
-  string updated_at = 6;
 }
 // TeamDto
 message TeamGrpc {
