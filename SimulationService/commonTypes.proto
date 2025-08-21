@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+package SimPitchProtos.SimulationService;
+
+option csharp_namespace = "SimPitchProtos.SimulationService";
+

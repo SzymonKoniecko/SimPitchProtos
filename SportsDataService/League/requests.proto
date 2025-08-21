@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package SimPitchProtos.SportsDataService.League;
+
+
+option csharp_namespace = "SimPitchProtos.SportsDataService.League";
+
+message LeaguesByCountryIdRequest {
+  string country_id = 1;
+}
+
+message LeagueByIdRequest{
+  string league_id = 1;
+}

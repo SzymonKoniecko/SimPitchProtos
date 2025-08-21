@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package SimPitchProtos.SportsDataService.SeasonStats;
+
+import "SeasonStats/requests.proto";
+import "SeasonStats/responses.proto";
+import "commonTypes.proto";
+
+option csharp_namespace = "SimPitchProtos.SportsDataService.SeasonStats";
+
+service SeasonStatsService {
+  rpc GetSeasonsStatsByTeamId(SeasonStatsByTeamIdRequest) returns (SeasonStatsByTeamIdResponse);
+}

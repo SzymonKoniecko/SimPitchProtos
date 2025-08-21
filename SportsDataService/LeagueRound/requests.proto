@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package SimPitchProtos.SportsDataService.LeagueRound;
+
+
+option csharp_namespace = "SimPitchProtos.SportsDataService.LeagueRound";
+
+message LeagueRoundsByParamsRequest {
+  string season_year = 1;
+  optional int32 round = 2;
+  optional string league_round_id = 3;
+}

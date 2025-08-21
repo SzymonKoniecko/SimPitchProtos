@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package SimPitchProtos.SportsDataService.MatchRound;
+
+import "MatchRound/requests.proto";
+import "MatchRound/responses.proto";
+import "commonTypes.proto";
+
+option csharp_namespace = "SimPitchProtos.SportsDataService.MatchRound";
+
+service MatchRoundService {
+  rpc GetMatchRoundsByRoundId(MatchRoundsByRoundIdRequest) returns (MatchRoundsByRoundIdResponse);
+}

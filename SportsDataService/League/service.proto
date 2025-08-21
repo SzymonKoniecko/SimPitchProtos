@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package SimPitchProtos.SportsDataService.League;
+
+import "google/protobuf/empty.proto";
+import "League/requests.proto";
+import "League/responses.proto";
+import "commonTypes.proto";
+
+option csharp_namespace = "SimPitchProtos.SportsDataService.League";
+
+service LeagueService {
+  rpc GetLeaguesByCountryId (LeaguesByCountryIdRequest) returns (LeaguesByCountryIdResponse);
+  rpc GetLeagueById (LeagueByIdRequest) returns (LeagueGrpc);
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package SimPitchProtos.SportsDataService.League;
+
+import "commonTypes.proto";
+
+option csharp_namespace = "SimPitchProtos.SportsDataService.League";
+
+message LeaguesByCountryIdResponse{
+  repeated LeagueGrpc leagues = 1;
+}
