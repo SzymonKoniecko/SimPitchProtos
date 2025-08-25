@@ -6,7 +6,7 @@ package SimPitchProtos.SimulationService.SimulationEngine;
 option csharp_namespace = "SimPitchProtos.SimulationService.SimulationEngine";
 
 message RunSimulationEngineRequest {
-  string season_year = 1;
-  optional string league_id = 2;
+  repeated string season_years = 1;
+  string league_id = 2;
   optional string round_id = 3;
 }
