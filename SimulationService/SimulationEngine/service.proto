@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package SimPitchProtos.SimulationService.SimulationEngine;
 
-import "google/protobuf/empty.proto";
+
 import "SimulationEngine/requests.proto";
 import "SimulationEngine/responses.proto";
 import "commonTypes.proto";

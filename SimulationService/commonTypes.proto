@@ -4,3 +4,14 @@ package SimPitchProtos.SimulationService;
 
 option csharp_namespace = "SimPitchProtos.SimulationService";
 
+message SimulationResultGrpc {
+    string id = 1;
+    string simulation_id = 2;
+    int32 simulation_index = 3;
+    string start_date = 4;
+    string execution_time = 5;
+    string simulated_match_rounds = 6;
+    float league_strength = 7;
+    float prior_league_strength = 8;
+    string raport = 9;
+}
