@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package SimPitchProtos.StatisticsService.Scoreboard;
+
+
+option csharp_namespace = "SimPitchProtos.StatisticsService.Scoreboard";
+
+message ScoreboardsBySimulationIdRequest {
+  string simulation_id = 1;
+}

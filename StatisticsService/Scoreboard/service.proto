@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package SimPitchProtos.StatisticsService.Scoreboard;
+
+
+import "Scoreboard/requests.proto";
+import "Scoreboard/responses.proto";
+import "commonTypes.proto";
+
+option csharp_namespace = "SimPitchProtos.StatisticsService.Scoreboard";
+
+service ScoreboardService {
+  rpc GetScoreboardsBySimulationId (ScoreboardsBySimulationIdRequest) returns (ScoreboardsBySimulationIdResponse);
+}
