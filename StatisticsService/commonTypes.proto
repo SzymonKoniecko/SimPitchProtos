@@ -8,14 +8,14 @@ message ScoreboardGrpc {
     string id = 1;
     string simulation_id = 2;
     string simulation_result_id = 3;
-    ScoreboardTeamStatsGrpc scoreboard_teams = 4;
+    repeated ScoreboardTeamStatsGrpc scoreboard_teams = 4;
     float league_strength = 5;
     float prior_league_strength = 6;
 }
 
 message ScoreboardTeamStatsGrpc{
     string id = 1;
-    string simulation_id = 2;
+    string scoreboard_id = 2;
     string team_id = 3;
     int32 rank = 4;
     int32 points = 5;
