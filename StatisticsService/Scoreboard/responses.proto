@@ -6,6 +6,6 @@ import "commonTypes.proto";
 
 option csharp_namespace = "SimPitchProtos.StatisticsService.Scoreboard";
 
-message ScoreboardsBySimulationIdResponse{
+message ScoreboardsResponse{
   repeated ScoreboardGrpc scoreboards = 1;
 }
