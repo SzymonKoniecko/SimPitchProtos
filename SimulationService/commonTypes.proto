@@ -13,5 +13,13 @@ message SimulationResultGrpc {
     string simulated_match_rounds = 6;
     float league_strength = 7;
     float prior_league_strength = 8;
-    string raport = 9;
+    SimulationParamsGrpc simulation_params = 9;
+    string raport = 10;
+}
+
+message SimulationParamsGrpc {
+  repeated string season_years = 1;
+  string league_id = 2;
+  int32 iterations = 3;
+  optional string round_id = 4;
 }

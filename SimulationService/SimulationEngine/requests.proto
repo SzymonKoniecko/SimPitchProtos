@@ -2,12 +2,10 @@ syntax = "proto3";
 
 package SimPitchProtos.SimulationService.SimulationEngine;
 
+import "commonTypes.proto";
 
 option csharp_namespace = "SimPitchProtos.SimulationService.SimulationEngine";
 
 message RunSimulationEngineRequest {
-  repeated string season_years = 1;
-  string league_id = 2;
-  int32 iterations = 3;
-  optional string round_id = 4;
+  SimulationParamsGrpc simulation_params = 1;
 }
