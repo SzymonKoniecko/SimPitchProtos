@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package SimPitchProtos.StatisticsService.Scoreboard;
+
+import "commonTypes.proto";
+
+option csharp_namespace = "SimPitchProtos.StatisticsService.Scoreboard";
+
+message ScoreboardsResponse{
+  repeated ScoreboardGrpc scoreboards = 1;
+}
