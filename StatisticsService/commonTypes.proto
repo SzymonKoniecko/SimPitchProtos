@@ -7,7 +7,7 @@ option csharp_namespace = "SimPitchProtos.StatisticsService";
 message ScoreboardGrpc {
     string id = 1;
     string simulation_id = 2;
-    string simulation_result_id = 3;
+    string iteration_result_id = 3;
     repeated ScoreboardTeamStatsGrpc scoreboard_teams = 4;
     float league_strength = 5;
     float prior_league_strength = 6;
