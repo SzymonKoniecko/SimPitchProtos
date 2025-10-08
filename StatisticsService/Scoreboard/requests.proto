@@ -7,11 +7,11 @@ option csharp_namespace = "SimPitchProtos.StatisticsService.Scoreboard";
 
 message ScoreboardsBySimulationIdRequest {
   string simulation_id = 1;
-  optional string simulation_result_id = 2;
+  optional string iteration_result_id = 2;
   optional bool withTeamStats = 3;
 }
 
 message CreateScoreboardsRequest{
   string simulation_id = 1;
-  optional string simulation_result_id = 2;
+  optional string iteration_result_id = 2;
 }
