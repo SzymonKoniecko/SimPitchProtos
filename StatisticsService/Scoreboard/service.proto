@@ -11,5 +11,5 @@ option csharp_namespace = "SimPitchProtos.StatisticsService.Scoreboard";
 
 service ScoreboardService {
   rpc CreateScoreboards (CreateScoreboardsRequest) returns (ScoreboardsResponse);
-  rpc GetScoreboardsBySimulationId (ScoreboardsBySimulationIdRequest) returns (ScoreboardsResponse);
+  rpc GetScoreboardsBySimulationId (ScoreboardsByQueryRequest) returns (ScoreboardsResponse);
 }
