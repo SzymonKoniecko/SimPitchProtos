@@ -6,6 +6,7 @@ package SimPitchProtos.SimulationService.SimulationEngine;
 import "SimulationEngine/requests.proto";
 import "SimulationEngine/responses.proto";
 import "commonTypes.proto";
+import "google/protobuf/empty.proto";
 
 option csharp_namespace = "SimPitchProtos.SimulationService.SimulationEngine";
 
