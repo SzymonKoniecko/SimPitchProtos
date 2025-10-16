@@ -10,9 +10,6 @@ message RunSimulationEngineResponse{
   string simulation_id = 1;
 }
 
-message SimulationListResponse{
-  string id = 1;
-  string title = 2;
-  string created_date = 3;
-  SimulationParamsGrpc simulation_params = 4;
+message SimulationOverviewsListResponse{
+  repeated SimulationOverviewGrpc SimulationOverviews = 1;
 }

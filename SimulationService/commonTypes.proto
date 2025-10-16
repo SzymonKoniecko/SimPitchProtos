@@ -23,3 +23,10 @@ message SimulationParamsGrpc {
   int32 iterations = 3;
   optional string league_round_id = 4;
 }
+
+message SimulationOverviewGrpc{
+  string id = 1;
+  string title = 2;
+  string created_date = 3;
+  SimulationParamsGrpc simulation_params = 4;
+}
