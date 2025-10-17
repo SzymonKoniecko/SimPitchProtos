@@ -10,6 +10,10 @@ message RunSimulationEngineResponse{
   string simulation_id = 1;
 }
 
+message SimulationOverviewResponse{
+  SimulationOverviewGrpc SimulationOverviews = 1;
+}
+
 message SimulationOverviewsListResponse{
   repeated SimulationOverviewGrpc SimulationOverviews = 1;
 }
