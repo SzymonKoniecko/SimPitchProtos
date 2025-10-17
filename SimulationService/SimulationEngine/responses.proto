@@ -11,7 +11,7 @@ message RunSimulationEngineResponse{
 }
 
 message SimulationOverviewResponse{
-  SimulationOverviewGrpc SimulationOverviews = 1;
+  SimulationOverviewGrpc SimulationOverview = 1;
 }
 
 message SimulationOverviewsListResponse{
