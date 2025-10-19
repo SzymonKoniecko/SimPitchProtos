@@ -9,3 +9,11 @@ option csharp_namespace = "SimPitchProtos.SimulationService.SimulationEngine";
 message RunSimulationEngineResponse{
   string simulation_id = 1;
 }
+
+message SimulationOverviewResponse{
+  SimulationOverviewGrpc SimulationOverview = 1;
+}
+
+message SimulationOverviewsListResponse{
+  repeated SimulationOverviewGrpc SimulationOverviews = 1;
+}
