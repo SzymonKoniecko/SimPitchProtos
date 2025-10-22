@@ -5,6 +5,10 @@ package SimPitchProtos.SimulationService.IterationResult;
 
 option csharp_namespace = "SimPitchProtos.SimulationService.IterationResult";
 
+message IterationResultByIdRequest{
+  string id = 1;
+}
+
 message IterationResultsBySimulationIdRequest{
   string simulation_id = 1;
 }
