@@ -29,3 +29,9 @@ message SimulationOverviewGrpc{
   string created_date = 3;
   SimulationParamsGrpc simulation_params = 4;
 }
+
+message SimulationStateGrpc{
+  string simulation_status = 1;
+  float progress = 2;
+  string updated_at = 3;
+}

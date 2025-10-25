@@ -14,4 +14,5 @@ service SimulationEngineService {
   rpc RunSimulation (RunSimulationEngineRequest) returns (RunSimulationEngineResponse);
   rpc GetSimulationOverviewById (GetSimulationOverviewByIdRequest) returns (SimulationOverviewResponse);
   rpc GetAllSimulationOverviews (google.protobuf.Empty) returns (SimulationOverviewsListResponse);
+  rpc GetSimulationStateById(GetSimulationStateByIdRequest) returns (SimulationStateResponse);
 }
