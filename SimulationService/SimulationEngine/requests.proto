@@ -17,3 +17,7 @@ message GetSimulationOverviewByIdRequest{
 message GetSimulationStateByIdRequest{
   string simulation_id = 1;
 }
+
+message StopSimulationRequest{
+  string simulation_id = 1;
+}
