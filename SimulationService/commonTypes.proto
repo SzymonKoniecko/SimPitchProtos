@@ -10,11 +10,10 @@ message IterationResultGrpc {
     int32 iteration_index = 3;
     string start_date = 4;
     string execution_time = 5;
-    string simulated_match_rounds = 6;
-    float league_strength = 7;
-    float prior_league_strength = 8;
-    SimulationParamsGrpc simulation_params = 9;
-    string raport = 10;
+    string team_strengths = 6;
+    string simulated_match_rounds = 7;
+    float league_strength = 8;
+    float prior_league_strength = 9;
 }
 
 message SimulationParamsGrpc {

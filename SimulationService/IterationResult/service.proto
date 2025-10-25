@@ -8,6 +8,8 @@ import "commonTypes.proto";
 
 option csharp_namespace = "SimPitchProtos.SimulationService.IterationResult";
 
+
 service IterationResultService {
+  rpc GetIterationResultById (IterationResultByIdRequest) returns (IterationResultByIdResponse);
   rpc GetIterationResultsBySimulationId (IterationResultsBySimulationIdRequest) returns (IterationResultsBySimulationIdResponse);
 }

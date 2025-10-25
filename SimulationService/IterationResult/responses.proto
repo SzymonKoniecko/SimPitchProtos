@@ -6,6 +6,10 @@ import "commonTypes.proto";
 
 option csharp_namespace = "SimPitchProtos.SimulationService.IterationResult";
 
+message IterationResultByIdResponse{
+  IterationResultGrpc iteration_result = 1;
+}
+
 message IterationResultsBySimulationIdResponse{
   repeated IterationResultGrpc iteration_results = 1;
 }
