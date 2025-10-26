@@ -31,7 +31,10 @@ message SimulationOverviewGrpc{
 }
 
 message SimulationStateGrpc{
-  string simulation_status = 1;
-  float progress = 2;
-  string updated_at = 3;
+  string id = 1;
+  string simulation_id = 2;
+  int32 last_completed_iteration = 3;
+  float progress_percent = 4;
+  string state = 5;
+  string updated_at = 6;
 }
