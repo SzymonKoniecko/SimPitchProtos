@@ -13,3 +13,11 @@ message RunSimulationEngineRequest {
 message GetSimulationOverviewByIdRequest{
   string simulation_id = 1;
 }
+
+message GetSimulationStateByIdRequest{
+  string simulation_id = 1;
+}
+
+message StopSimulationRequest{
+  string simulation_id = 1;
+}

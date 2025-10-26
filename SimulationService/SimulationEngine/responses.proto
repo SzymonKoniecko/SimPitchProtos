@@ -17,3 +17,11 @@ message SimulationOverviewResponse{
 message SimulationOverviewsListResponse{
   repeated SimulationOverviewGrpc SimulationOverviews = 1;
 }
+
+message SimulationStateResponse{
+  SimulationStateGrpc simulation_state = 1;
+}
+
+message StopSimulationResponse{
+  string status = 1;
+}
