@@ -11,11 +11,12 @@ message RunSimulationEngineResponse{
 }
 
 message SimulationOverviewResponse{
-  SimulationOverviewGrpc SimulationOverview = 1;
+  SimulationOverviewGrpc simulation_overview = 1;
 }
 
-message SimulationOverviewsListResponse{
-  repeated SimulationOverviewGrpc SimulationOverviews = 1;
+message SimulationOverviewsPagedResponse{
+  repeated SimulationOverviewGrpc items = 1;
+  int32 total_count = 2;
 }
 
 message SimulationStateResponse{
