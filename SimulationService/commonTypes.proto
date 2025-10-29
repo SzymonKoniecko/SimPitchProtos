@@ -38,3 +38,8 @@ message SimulationStateGrpc{
   string state = 5;
   string updated_at = 6;
 }
+
+message PagedRequest{
+  int32 offset = 1;
+  int32 limit = 2;
+}
