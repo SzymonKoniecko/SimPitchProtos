@@ -47,7 +47,7 @@ message SortingMethodGrpc{
 message PagedRequestGrpc{
   int32 offset = 1;
   int32 limit = 2;
-  SortingMethod sorting_method = 3;
+  SortingMethodGrpc sorting_method = 3;
 }
 
 message PagedResponseGrpc{

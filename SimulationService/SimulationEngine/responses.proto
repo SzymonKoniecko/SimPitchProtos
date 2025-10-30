@@ -16,7 +16,7 @@ message SimulationOverviewResponse{
 
 message SimulationOverviewsPagedResponse{
   repeated SimulationOverviewGrpc items = 1;
-  PagedResponse paged = 2;
+  PagedResponseGrpc paged = 2;
 }
 
 message SimulationStateResponse{

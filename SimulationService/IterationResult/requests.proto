@@ -12,5 +12,5 @@ message IterationResultByIdRequest{
 
 message IterationResultsBySimulationIdRequest{
   string simulation_id = 1;
-  PagedRequest paged_request = 2;
+  PagedRequestGrpc paged_request = 2;
 }
