@@ -53,4 +53,5 @@ message PagedRequestGrpc{
 message PagedResponseGrpc{
   int32 total_count = 1;
   string sorting_option = 2;
+  string sorting_condition = 3;
 }
