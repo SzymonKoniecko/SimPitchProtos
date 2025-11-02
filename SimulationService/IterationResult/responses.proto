@@ -12,5 +12,5 @@ message IterationResultByIdResponse{
 
 message IterationResultsBySimulationIdResponse{
   repeated IterationResultGrpc items = 1;
-  int32 total_count = 2;
+  PagedResponseGrpc paged = 2;
 }

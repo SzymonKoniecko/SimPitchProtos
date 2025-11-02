@@ -39,7 +39,19 @@ message SimulationStateGrpc{
   string updated_at = 6;
 }
 
-message PagedRequest{
+message SortingMethodGrpc{
+  string sorting_option = 1;
+  string order = 2;
+}
+
+message PagedRequestGrpc{
   int32 offset = 1;
   int32 limit = 2;
+  SortingMethodGrpc sorting_method = 3;
+}
+
+message PagedResponseGrpc{
+  int32 total_count = 1;
+  string sorting_option = 2;
+  string sorting_order = 3;
 }
