@@ -41,7 +41,7 @@ message SimulationStateGrpc{
 
 message SortingMethodGrpc{
   string sorting_option = 1;
-  string condition = 2;
+  string order = 2;
 }
 
 message PagedRequestGrpc{
@@ -53,5 +53,5 @@ message PagedRequestGrpc{
 message PagedResponseGrpc{
   int32 total_count = 1;
   string sorting_option = 2;
-  string sorting_condition = 3;
+  string sorting_order = 3;
 }
