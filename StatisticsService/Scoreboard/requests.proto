@@ -17,5 +17,6 @@ message CreateScoreboardsRequest{
 }
 
 message CreateScoreboardByIterationResultDataRequest{
-  string iteration_result_json = 1;
+  string simulation_overview_json = 1;
+  string iteration_result_json = 2;
 }
