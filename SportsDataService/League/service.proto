@@ -2,7 +2,6 @@ syntax = "proto3";
 
 package SimPitchProtos.SportsDataService.League;
 
-import "google/protobuf/empty.proto";
 import "League/requests.proto";
 import "League/responses.proto";
 import "commonTypes.proto";
