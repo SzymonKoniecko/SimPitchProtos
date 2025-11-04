@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package SimPitchProtos.StatisticsService.SimulationStats;
+
+
+import "SimulationStats/requests.proto";
+import "SimulationStats/responses.proto";
+
+option csharp_namespace = "SimPitchProtos.StatisticsService.SimulationStats";
+
+service SimulationStatsService {
+  rpc CreateSimulationStats(CreateSimulationStatsRequest) returns (CreateSimulationStatsResponse);
+  rpc GetSimulationStats (GetSimulationStatsRequest) returns (GetSimulationStatsResponse);
+}

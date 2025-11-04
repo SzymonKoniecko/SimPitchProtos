@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package SimPitchProtos.StatisticsService.SimulationStats;
+
+
+option csharp_namespace = "SimPitchProtos.StatisticsService.SimulationStats";
+
+message CreateSimulationStatsRequest{
+  string simulation_id = 1;
+}
+
+message GetSimulationStatsRequest{
+  string simulation_id = 1;
+}

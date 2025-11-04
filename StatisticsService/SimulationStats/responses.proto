@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package SimPitchProtos.StatisticsService.SimulationStats;
+
+import "commonTypes.proto";
+
+option csharp_namespace = "SimPitchProtos.StatisticsService.SimulationStats";
+
+message CreateSimulationStatsResponse{
+  bool is_created = 1;
+}
+
+message GetSimulationStatsResponse{
+  repeated SimulationTeamStatsGrpc simulation_team_stats = 1;
+}
