@@ -9,3 +9,7 @@ option csharp_namespace = "SimPitchProtos.StatisticsService.Scoreboard";
 message ScoreboardsResponse{
   repeated ScoreboardGrpc scoreboards = 1;
 }
+
+message CreateScoreboardByIterationResultDataResponse{
+  bool is_created = 1;
+}

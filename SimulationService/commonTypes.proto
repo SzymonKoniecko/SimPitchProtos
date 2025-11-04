@@ -21,6 +21,7 @@ message SimulationParamsGrpc {
   string league_id = 2;
   int32 iterations = 3;
   optional string league_round_id = 4;
+  optional bool create_scoreboard_on_complete_iteration = 5;
 }
 
 message SimulationOverviewGrpc{

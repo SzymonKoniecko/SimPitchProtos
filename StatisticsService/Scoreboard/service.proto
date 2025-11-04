@@ -5,11 +5,11 @@ package SimPitchProtos.StatisticsService.Scoreboard;
 
 import "Scoreboard/requests.proto";
 import "Scoreboard/responses.proto";
-import "commonTypes.proto";
 
 option csharp_namespace = "SimPitchProtos.StatisticsService.Scoreboard";
 
 service ScoreboardService {
   rpc CreateScoreboards (CreateScoreboardsRequest) returns (ScoreboardsResponse);
   rpc GetScoreboardsByQuery (ScoreboardsByQueryRequest) returns (stream ScoreboardsResponse);
+  rpc CreateScoreboardByIterationResultData (CreateScoreboardByIterationResultDataRequest) returns (CreateScoreboardByIterationResultDataResponse);
 }
