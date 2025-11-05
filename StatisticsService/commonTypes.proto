@@ -27,3 +27,16 @@ message ScoreboardTeamStatsGrpc{
     int32 goals_for = 10;
     int32 goals_against = 11;
 }
+
+message SimulationTeamStatsGrpc{
+    string id = 1;
+    string simulation_id = 2;
+    string team_id = 3;
+    repeated float position_probbility = 4;
+    float averange_points = 5;
+    float averange_wins = 6;
+    float averange_losses = 7;
+    float averange_draws = 8;
+    float averange_goals_for = 9;
+    float averange_goals_against = 10;
+}
