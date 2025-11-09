@@ -27,9 +27,8 @@ message SimulationParamsGrpc {
 
 message SimulationOverviewGrpc{
   string id = 1;
-  string title = 2;
-  string created_date = 3;
-  SimulationParamsGrpc simulation_params = 4;
+  string created_date = 2;
+  SimulationParamsGrpc simulation_params = 3;
 }
 
 message SimulationStateGrpc{
