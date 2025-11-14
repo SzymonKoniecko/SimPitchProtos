@@ -23,6 +23,10 @@ message SimulationParamsGrpc {
   int32 iterations = 4;
   optional string league_round_id = 5;
   optional bool create_scoreboard_on_complete_iteration = 6;
+  optional int32 games_to_reach_trust = 7;
+  optional float confidence_level = 8;
+  optional float home_advantage = 9;
+  optional float noise_factor = 10;
 }
 
 message SimulationOverviewGrpc{
