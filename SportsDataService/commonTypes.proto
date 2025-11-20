@@ -24,8 +24,16 @@ message LeagueGrpc {
   string name = 2;
   string countryId = 3;
   int32 max_round = 4;
-  float strength = 5;
+  repeated LeagueStrengthGrpc league_strengths = 5;
 }
+// LeagueStrengthDto
+message LeagueStrengthGrpc {
+  string id = 1;
+  string league_id = 2;
+  string season_year = 3;
+  float strength = 4;
+}
+
 // TeamDto
 message TeamGrpc {
   string id = 1;
