@@ -9,9 +9,7 @@ message ScoreboardGrpc {
     string simulation_id = 2;
     string iteration_result_id = 3;
     repeated ScoreboardTeamStatsGrpc scoreboard_teams = 4;
-    float league_strength = 5;
-    float prior_league_strength = 6;
-    string created_at = 7;
+    string created_at = 5;
 }
 
 message ScoreboardTeamStatsGrpc{
