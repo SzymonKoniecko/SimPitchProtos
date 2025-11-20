@@ -12,8 +12,6 @@ message IterationResultGrpc {
     string execution_time = 5;
     string team_strengths = 6;
     string simulated_match_rounds = 7;
-    float league_strength = 8;
-    float prior_league_strength = 9;
 }
 
 message SimulationParamsGrpc {
@@ -34,6 +32,8 @@ message SimulationOverviewGrpc{
   string id = 1;
   string created_date = 2;
   SimulationParamsGrpc simulation_params = 3;
+  string league_strengths = 4;
+  float prior_league_strength = 5;
 }
 
 message SimulationStateGrpc{
