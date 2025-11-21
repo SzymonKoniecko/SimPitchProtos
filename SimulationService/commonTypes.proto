@@ -26,6 +26,7 @@ message SimulationParamsGrpc {
   optional float confidence_level = 9;
   optional float home_advantage = 10;
   optional float noise_factor = 11;
+  string model = 12;
 }
 
 message SimulationOverviewGrpc{
