@@ -57,9 +57,9 @@ message MatchRoundGrpc{
   string round_id = 2;
   string home_team_id = 3;
   string away_team_id = 4;
-  int32 home_goals = 5;
-  int32 away_goals = 6;
-  bool is_draw = 7;
+  optional int32 home_goals = 5;
+  optional int32 away_goals = 6;
+  optional bool is_draw = 7;
   bool is_played = 8;
 }
 // SeasonStatsDto
