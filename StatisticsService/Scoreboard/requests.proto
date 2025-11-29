@@ -20,3 +20,8 @@ message CreateScoreboardByIterationResultDataRequest{
   string simulation_overview_json = 1;
   string iteration_result_json = 2;
 }
+
+message CreateScoreboardByLeagueIdAndSeasonYearRequest{
+  string league_id = 1;
+  string season_year = 2;
+}

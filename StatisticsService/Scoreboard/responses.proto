@@ -13,3 +13,7 @@ message ScoreboardsResponse{
 message CreateScoreboardByIterationResultDataResponse{
   bool is_created = 1;
 }
+
+message CreateScoreboardByLeagueIdAndSeasonYearResponse{
+  ScoreboardGrpc scoreboard = 1;
+}

@@ -12,4 +12,5 @@ service ScoreboardService {
   rpc CreateScoreboards (CreateScoreboardsRequest) returns (ScoreboardsResponse);
   rpc GetScoreboardsByQuery (ScoreboardsByQueryRequest) returns (stream ScoreboardsResponse);
   rpc CreateScoreboardByIterationResultData (CreateScoreboardByIterationResultDataRequest) returns (CreateScoreboardByIterationResultDataResponse);
+  rpc CreateScoreboardByLeagueIdAndSeasonYear(CreateScoreboardByLeagueIdAndSeasonYearRequest) returns (CreateScoreboardByLeagueIdAndSeasonYearResponse);
 }
