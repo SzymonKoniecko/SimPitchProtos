@@ -9,3 +9,6 @@ option csharp_namespace = "SimPitchProtos.SportsDataService.SeasonStats";
 message SeasonStatsByTeamIdResponse {
   repeated SeasonStatsGrpc seasons_stats = 1;
 }
+message SeasonStatsByLeagueAndSeasonYearResponse {
+  repeated SeasonStatsGrpc seasons_stats = 1;
+}

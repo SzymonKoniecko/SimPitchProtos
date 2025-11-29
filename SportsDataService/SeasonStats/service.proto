@@ -9,4 +9,5 @@ option csharp_namespace = "SimPitchProtos.SportsDataService.SeasonStats";
 
 service SeasonStatsService {
   rpc GetSeasonsStatsByTeamId(SeasonStatsByTeamIdRequest) returns (SeasonStatsByTeamIdResponse);
+  rpc GetSeasonStatsByLeagueAndSeasonYear(SeasonStatsByLeagueAndSeasonYearRequest) returns (SeasonStatsByLeagueAndSeasonYearResponse);
 }

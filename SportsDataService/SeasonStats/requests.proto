@@ -8,3 +8,8 @@ option csharp_namespace = "SimPitchProtos.SportsDataService.SeasonStats";
 message SeasonStatsByTeamIdRequest {
   string team_id = 1;
 }
+
+message SeasonStatsByLeagueAndSeasonYearRequest {
+  string league_id = 1;
+  string season_year = 2;
+}
