@@ -49,6 +49,7 @@ message SimulationStateGrpc{
 message SortingMethodGrpc{
   string sorting_option = 1;
   string order = 2;
+  string condition = 3;
 }
 
 message PagedRequestGrpc{
