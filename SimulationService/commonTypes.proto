@@ -26,7 +26,8 @@ message SimulationParamsGrpc {
   optional float confidence_level = 9;
   optional float home_advantage = 10;
   optional float noise_factor = 11;
-  string model = 12;
+  optional string target_league_round_id = 12;
+  string model = 13;
 }
 
 message SimulationOverviewGrpc{
