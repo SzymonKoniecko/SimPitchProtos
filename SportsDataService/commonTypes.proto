@@ -33,6 +33,13 @@ message LeagueStrengthGrpc {
   string season_year = 3;
   float strength = 4;
 }
+// CompetitionMembershipDto
+message CompetitionMembershipGrpc {
+  string id = 1;
+  string team_id = 2;
+  string league_id = 3;
+  string season_year = 3;
+}
 
 // TeamDto
 message TeamGrpc {
@@ -40,9 +47,8 @@ message TeamGrpc {
   string name = 2;
   CountryGrpc country = 3;
   StadiumGrpc stadium = 4;
-  LeagueGrpc league = 5;
-  string logo_url = 6;
-  string short_name = 7;
+  repeated CompetitionMembershipGrpc memberships = 5;
+  string short_name = 6;
 }
 // LeagueRoundDto
 message LeagueRoundGrpc{
