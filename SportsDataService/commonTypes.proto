@@ -38,7 +38,7 @@ message CompetitionMembershipGrpc {
   string id = 1;
   string team_id = 2;
   string league_id = 3;
-  string season_year = 3;
+  string season_year = 4;
 }
 
 // TeamDto
