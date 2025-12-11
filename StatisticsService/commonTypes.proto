@@ -24,6 +24,7 @@ message ScoreboardTeamStatsGrpc{
     int32 draws = 9;
     int32 goals_for = 10;
     int32 goals_against = 11;
+    bool is_initial_stats = 12;
 }
 
 message SimulationTeamStatsGrpc{
