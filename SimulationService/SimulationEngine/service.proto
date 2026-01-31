@@ -15,5 +15,6 @@ service SimulationEngineService {
   rpc GetSimulationOverviewById (GetSimulationOverviewByIdRequest) returns (SimulationOverviewResponse);
   rpc GetAllSimulationOverviews (PagedRequestGrpc) returns (SimulationOverviewsPagedResponse);
   rpc GetSimulationStateById(GetSimulationStateByIdRequest) returns (SimulationStateResponse);
+  rpc GetLatestSimulationIds(GetLatestSimulationIdsRequest) returns (SimulationIdsResponse);
   rpc StopSimulationById(StopSimulationRequest) returns (StopSimulationResponse);
 }

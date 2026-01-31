@@ -23,6 +23,10 @@ message SimulationStateResponse{
   SimulationStateGrpc simulation_state = 1;
 }
 
+message SimulationIdsResponse{
+  repeated string simulation_ids = 1;
+}
+
 message StopSimulationResponse{
   string status = 1;
 }

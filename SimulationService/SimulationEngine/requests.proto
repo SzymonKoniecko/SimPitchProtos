@@ -18,6 +18,10 @@ message GetSimulationStateByIdRequest{
   string simulation_id = 1;
 }
 
+message GetLatestSimulationIdsRequest{
+  string date = 1;
+}
+
 message StopSimulationRequest{
   string simulation_id = 1;
 }
