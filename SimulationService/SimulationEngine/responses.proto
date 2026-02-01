@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package SimPitchProtos.SimulationService.SimulationEngine;
 
-import "commonTypes.proto";
+import "SimulationService/commonTypes.proto";
 
 option csharp_namespace = "SimPitchProtos.SimulationService.SimulationEngine";
 

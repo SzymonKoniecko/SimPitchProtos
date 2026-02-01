@@ -2,8 +2,8 @@ syntax = "proto3";
 
 package SimPitchProtos.SportsDataService.LeagueRound;
 
-import "LeagueRound/requests.proto";
-import "LeagueRound/responses.proto";
+import "SportsDataService/LeagueRound/requests.proto";
+import "SportsDataService/LeagueRound/responses.proto";
 
 option csharp_namespace = "SimPitchProtos.SportsDataService.LeagueRound";
 

@@ -3,10 +3,9 @@ syntax = "proto3";
 package SimPitchProtos.SimulationService.SimulationEngine;
 
 
-import "SimulationEngine/requests.proto";
-import "SimulationEngine/responses.proto";
-import "commonTypes.proto";
-import "google/protobuf/empty.proto";
+import "SimulationService/SimulationEngine/requests.proto";
+import "SimulationService/SimulationEngine/responses.proto";
+import "SimulationService/commonTypes.proto";
 
 option csharp_namespace = "SimPitchProtos.SimulationService.SimulationEngine";
 
