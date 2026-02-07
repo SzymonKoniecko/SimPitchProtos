@@ -2,8 +2,8 @@ syntax = "proto3";
 
 package SimPitchProtos.SportsDataService.SeasonStats;
 
-import "SeasonStats/requests.proto";
-import "SeasonStats/responses.proto";
+import "SportsDataService/SeasonStats/requests.proto";
+import "SportsDataService/SeasonStats/responses.proto";
 
 option csharp_namespace = "SimPitchProtos.SportsDataService.SeasonStats";
 
