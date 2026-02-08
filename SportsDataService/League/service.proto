@@ -2,9 +2,9 @@ syntax = "proto3";
 
 package SimPitchProtos.SportsDataService.League;
 
-import "League/requests.proto";
-import "League/responses.proto";
-import "commonTypes.proto";
+import "SportsDataService/League/requests.proto";
+import "SportsDataService/League/responses.proto";
+import "SportsDataService/commonTypes.proto";
 
 option csharp_namespace = "SimPitchProtos.SportsDataService.League";
 
