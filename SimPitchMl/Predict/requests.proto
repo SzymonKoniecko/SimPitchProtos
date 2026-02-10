@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package SimPitchProtos.SimPitchMl.Predict;
+import "SimPitchMl/commonTypes.proto";
+
+
+option csharp_namespace = "SimPitchProtos.SimPitchMl.Predict";
+
+message PredictRequest{
+  PredictGrpc predict = 1;
+}

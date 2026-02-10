@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package SimPitchProtos.SimPitchMl;
+
+option csharp_namespace = "SimPitchProtos.SimPitchMl";
+
+message PredictGrpc {
+    string simulation_id = 1;
+    string league_id = 2;
+    int32 iteration_count = 3;
+    string team_strengths = 4;
+    string matches_to_simulate = 5;
+    int32 train_until_round_no = 6;
+    
+    optional float league_avg_strength = 7;
+    optional int32 seed = 8;
+    optional float train_ratio = 9;
+}

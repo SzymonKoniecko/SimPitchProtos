@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package SimPitchProtos.SimPitchMl.Predict;
+
+import "SimPitchMl/Predict/requests.proto";
+import "SimPitchMl/Predict/responses.proto";
+import "SimPitchMl/commonTypes.proto";
+
+option csharp_namespace = "SimPitchProtos.SimPitchMl.Predict";
+
+
+service PredictService {
+  rpc StartPrediction (PredictRequest) returns (PredictResponse);
+}

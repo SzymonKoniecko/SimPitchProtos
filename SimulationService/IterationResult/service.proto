@@ -5,6 +5,7 @@ package SimPitchProtos.SimulationService.IterationResult;
 import "SimulationService/IterationResult/requests.proto";
 import "SimulationService/IterationResult/responses.proto";
 import "SimulationService/commonTypes.proto";
+import "google/protobuf/empty.proto";
 
 option csharp_namespace = "SimPitchProtos.SimulationService.IterationResult";
 
@@ -12,4 +13,5 @@ option csharp_namespace = "SimPitchProtos.SimulationService.IterationResult";
 service IterationResultService {
   rpc GetIterationResultById (IterationResultByIdRequest) returns (IterationResultByIdResponse);
   rpc GetIterationResultsBySimulationId (IterationResultsBySimulationIdRequest) returns (stream IterationResultsBySimulationIdResponse);
+  rpc SaveIterationResult(SaveIterationResultRequest) returns (google.protobuf.Empty);
 }
