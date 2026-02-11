@@ -16,3 +16,13 @@ message PredictGrpc {
     optional int32 seed = 8;
     optional float train_ratio = 9;
 }
+
+message IterationResultGrpc {
+    string id = 1;
+    string simulation_id = 2;
+    optional int32 iteration_index = 3;
+    string start_date = 4;
+    string execution_time = 5;
+    string team_strengths = 6;
+    string simulated_match_rounds = 7;
+}

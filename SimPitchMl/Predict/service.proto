@@ -10,5 +10,5 @@ option csharp_namespace = "SimPitchProtos.SimPitchMl.Predict";
 
 
 service PredictService {
-  rpc StartPrediction (PredictRequest) returns (PredictResponse);
+  rpc StreamPrediction (PredictRequest) returns (stream PredictResponse);
 }

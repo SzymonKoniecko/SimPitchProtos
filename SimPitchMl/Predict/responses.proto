@@ -9,4 +9,5 @@ option csharp_namespace = "SimPitchProtos.SimPitchMl.Predict";
 message PredictResponse{
   string status = 1;
   int32 predicted_iterations = 2;
+  IterationResultGrpc iteration_result = 3;
 }
