@@ -12,7 +12,6 @@ message IterationResultGrpc {
     string execution_time = 5;
     string team_strengths = 6;
     string simulated_match_rounds = 7;
-    string created_by = 8;
 }
 
 message SimulationParamsGrpc {
