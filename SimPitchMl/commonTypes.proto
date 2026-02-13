@@ -15,6 +15,7 @@ message PredictGrpc {
     optional float league_avg_strength = 7;
     optional int32 seed = 8;
     optional float train_ratio = 9;
+    optional int32 games_to_reach_trust = 10;
 }
 
 message IterationResultGrpc {
