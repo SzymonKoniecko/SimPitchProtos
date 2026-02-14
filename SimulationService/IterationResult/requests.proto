@@ -14,3 +14,7 @@ message IterationResultsBySimulationIdRequest{
   string simulation_id = 1;
   PagedRequestGrpc paged_request = 2;
 }
+
+message SaveIterationResultRequest{
+  IterationResultGrpc iteration_result_grpc = 1;
+}
